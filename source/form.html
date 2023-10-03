@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
@@ -44,139 +43,140 @@
   </header>
   <main class="main">
     <h1 class="visually-hidden">Седона-городок в Аризоне.</h1>
-    <section class="hero">
-      <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-      <div class="hero__wrapper">
+    <section class="hero-form">
+      <h2 class="visually-hidden">Фото Седоны.</h2>
+      <div class="hero-form__wrapper">
         <picture>
-          <source media="(min-width:1440px)" srcset="../source/img/photos/background-hero-desktop.jpg" width="1200"
+          <source media="(min-width:1440px)" srcset="../source/img/photos/background-form-desktop.jpg" width="1200"
             height="518">
-          <source media="(min-width:768px)" srcset="../source/img/photos/background-hero-tablet.jpg" width="768"
+          <source media="(min-width:768px)" srcset="../source/img/photos/background-form-tablet.jpg" width="768"
             height="518">
-          <img class="hero__img" src="../source/img/photos/background-hero-mobile.jpg"
-            srcset="../source/img/photos/background-hero-mobile@2x.jpg" alt="Добро пожаловать в Седону" width="320"
-            height="389">
+          <img class="hero-form__img" src="../source/img/photos/background-form-mobile.jpg"
+            srcset="../source/img/photos/background-form-mobile@2x.jpg" alt="Фото Седоны" width="320" height="389">
         </picture>
       </div>
     </section>
-    <section class="advantages">
-      <div class="advantages__wrapper">
-        <h2 class="visually-hidden">Преимущества.</h2>
-        <p class="advantages__title main-title">Седона — небольшой городок в Аризоне,
-          заслуживающий большего!
-        </p>
-        <p class="advantages__subtitle subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-      </div>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <div class="advantages__item-container">
-            <h3 class="advantages__title main-title">Настоящий городок</h3>
-            <p>- № 1 -</p>
-            <p class="advantages__content main-subtitle">Седона — не аттракцион для туристов,там течёт своя жизнь</p>
-          </div>
-          <picture>
-            <source media="(min-width:1440px)" srcset="../source/img/photos/background-hero-desktop.jpg" width="800"
-              height="256">
-            <source media="(min-width:768px)" srcset="../source/img/photos/real-town-tablet.jpg" width="512"
-              height="256">
-            <img class="advantages__img" src="../source/img/photos/real-town-mobile.jpg"
-              srcset="../source/img/photos/real-town-mobile@2x.jpg" alt="Настоящий городок" width="320" height="260">
-          </picture>
-          <section class="services">
-            <h2 class="visually-hidden">Услуги Седоны.</h2>
-            <ul class="services__list">
-              <li class="services__item">
-                <h3 class="services__title main-title">Жильё</h3>
-                <p class="services__text subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li class="services__item">
-                <h3 class="services__title main-title">Еда</h3>
-                <p class="services-text subtitle">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-                </p>
-              </li>
-              <li class="services__item">
-                <h3 class="services__title main-title">Сувениры</h3>
-                <p class="services-text subtitle">Не только китайского, но и настоящего местного производства!</p>
-              </li>
-            </ul>
-          </section>
+    <section class="feedback">
+      <h1 class="feedback__title main-title">Оставьте свой отзыв</h1>
+      <p class="feedback__subtitle subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+        посещенных вами достопримечательностях
+      </p>
+    </section>
+
+    <form class="form form-page__form" action="https://echo.htmlacademy.ru/" method="post"></form>
+    <fieldset class="form__group group-name">
+      <legend class="group-info__title name-title">
+        <div class="name-title__container">
+          <span class="name-title__text main-title">Представьтесь:</span>
+        </div>
+      </legend>
+      <ul class="form__list group-name__list">
+        <li class="form__item group-name__item text-input">
+          <label class="text-input__label" for="name-field">Имя*:</label>
+          <input class="text-input__input" type="text" name="user-name" id="name-field" value="Пётр">
         </li>
-        <li class="advantages__item">
-          <div class="advantages__item-container">
-            <h3 class="advantages__title main-title">Там есть мост дьявола</h3>
-            <p>- № 2 -</p>
-            <p class="advantages__content main-subtitle">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          </div>
-          <picture>
-            <source media="(min-width:1440px)" srcset="../source/img/photos/devil's-bridge-desktop.jpg" width="800"
-              height="256">
-            <source media="(min-width:768px)" srcset="../source/img/photos/devil's-bridge-tablet.jpg" width="512"
-              height="256">
-            <img class="advantages__img" src="../source/img/photos/devil's-bridge-mobile.jpg"
-              srcset="../source/img/photos/devil's-bridge-mobile@2x.jpg" alt="Мост дьявола" width="320" height="260">
-          </picture>
+        <li class="form__item group-name__item text-input">
+          <label class="text-input__label" for="surname-field">Фамилия*:</label>
+          <input class="text-input__input" type="text" name="user-surname" id="surname-field" value="Пустота">
         </li>
-        <li class="advantages__item">
-          <div class="advantages__item-container">
-            <h3 class="advantages__title main-title">Небольшая площадь</h3>
-            <p>- № 3 -</p>
-            <p class="advantages__content main-subtitle">Все интересные места находятся очень близко</p>
-          </div>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__item-container">
-            <h3 class="advantages__title main-title">Красивая дорога</h3>
-            <p>- № 4 -</p>
-            <p class="advantages__content main-subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__item-container">
-            <h3 class="advantages__title main-title">Мало туристов</h3>
-            <p>- № 5 -</p>
-            <p class="advantages__content main-subtitle">Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
+        <li class="form__item group-name__item text-input">
+          <label class="text-input__label" for="patronymic-field">Отчество:</label>
+          <input class="text-input__input" type="text" name="user-patronymic" id="patronymic-field" value="Викторович">
         </li>
       </ul>
-    </section>
-    <section class="purchase">
-      <div class="purchase__container">
-        <h2 class="visually-hidden">Покупка тура.</h2>
-        <p class="purchase__title main-title">Заинтересовались?</p>
-        <p class="purchase__subtitle main-subtitle">Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="purchase__button button">Найти гостиницу</a>
+    </fieldset>
+    <fieldset class="form__group group-info">
+      <legend class="group-info__title contact-title">
+        <div class="contact-title__container">
+          <span class="contact-title__text  main-title">Контактная информация:</span>
+        </div>
+      </legend>
+      <ul class="form__list group-info__list">
+        <li class="form__item group-info__item group-info__item--phone text-input">
+          <label class="text-input__label" for="phone-field">Контактный телефон*:</label>
+          <input class="text-input__input" type="tel" name="phone" id="phone-field" value="Введите телефон"
+            placeholder="Ваш телефон" required>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z"
+              fill="#010101" />
+          </svg>
+        </li>
+        <li class="form__item group-info__item group-info__item--email text-input">
+          <label class="text-input__label" for="email-field">Электронная почта*:</label>
+          <input class="text-input__input" type="email" name="email" id="email-field" value="Введите email"
+            placeholder="Ваш e-mail" required>
+
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9 11C8.7 11 8.5 10.9 8 10.7L1 7V14C1 14.5 1.5 15 2 15H16C16.5 15 17 14.5 17 14V7L10 10.7C9.5 10.9 9.3 11 9 11ZM16 3H2C1.5 3 1 3.5 1 4V4.8L9 9L17 4.8V4C17 3.5 16.5 3 16 3Z"
+              fill="black" />
+          </svg>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="form__group group-impression">
+      <legend class="group-impression__title impression-title">
+        <div class="impression-title__container">
+          <span class="impression-title__text  main-title">Ваше общее впечатление:</span>
+        </div>
+      </legend>
+      <ul class="form__list group-impression__list">
+        <li class="form__item group-impression__item radio">
+          <input class="radio__input" type="radio" id="plus" name="opinion" value="plus" checked>
+          <label class="radio__label" for="plus">Скорее положительное</label>
+        </li>
+        <li class="form__item group-impression__item radio">
+          <input class="radio__input" type="radio" id="minus" name="opinion" value="minus">
+          <label class="radio__label" for="minus">Скорее отрицательное</label>
+        </li>
+        <li class="form__item group-impression__item radio">
+          <input class="radio__input" type="radio" id="hesitant" name="opinion" value="hesitant">
+          <label class="radio__label" for="hesitant">Затрудняюсь ответить</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset class="form__group group-attractions">
+      <legend class="group-attraction__title attraction-title">
+        <div class="attraction-title__container">
+          <span class="attraction-title__text">Посещенные достопримечательности</span>
+        </div>
+      </legend>
+      <ul class="form__list group-attractions__list">
+        <li class="form__item group-attractions__item control">
+          <input class="control__input" type="checkbox" name="devil's bridge" id="devil's bridge" checked>
+          <label class="control__label" for="devil's bridge">Мост дьявола</label>
+        </li>
+        <li class="form__item group-attractions__item control">
+          <input class="control__input" type="checkbox" name="mountain-bell" id="mountain-bell" checked>
+          <label class="control__label" for="mountain-bell">Гора-Колокол</label>
+        </li>
+        <li class="form__item group-attractions__item control">
+          <input class="control__input" type="checkbox" name="slide-park" id="slide-park" checked>
+          <label class="control__label" for="slide-park">Слайд-парк</label>
+        </li>
+        <li class="form__item group-attractions__item control">
+          <input class="control__input" type="checkbox" name="red-rocks" id="red-rocks" checked>
+          <label class="control__label" for="red-rocks">Красные скалы</label>
+        </li>
+      </ul>
+      <fieldset class="form__group group-emotions">
+        <legend class="group-emotions__title emotions-title">
+          <div class="emotions-title__container">
+            <span class="emotions-title__text main-title">Опишите свои эмоции:</span>
+          </div>
+        </legend>
+        <label class="group-emotions__label text-input__label" for="message"></label>
+        <div class="group-emotions__wrapper">
+          <textarea class="text-input__input textarea" name="comment" id="message" maxlength="250"
+            placeholder="Опишите подробно все свои восторги"></textarea>
+        </div>
+      </fieldset>
+      <div class="form__wrapper">
+        <button class="form__button button" type="submit">Отправить отзыв</button>
+        <p class="form__text">* — Обязательные поля</p>
       </div>
-    </section>
-    <picture>
-      <source media="(min-width: @desktop-width)"
-        srcset="../source/img/photos/map-desktop.webp, ../source/img/map-desktop@2x.webp 2x" type="image/webp"
-        width="1440" height="350">
-      <source media="(min-width: @tablet-width)"
-        srcset="../source/img/photos/map-tablet.webp, ../source/img/map-tablet@2x.webp 2x" type="image/webp" width="768"
-        height="350">
-      <source media="(min-width: @mobile-width)"
-        srcset="../source/img/photos/map-mobile.webp, ../source/img/map-mobile@2x.webp 2x" type="image/webp" width="320"
-        height="350">
-      <source media="(min-width: @desktop-width)"
-        srcset="../source/img/photos/map-desktop.png 1x, ../source/img/photos/map-desktop.png 2x" width="1440"
-        height="350">
-      <source media="(min-width: @tablet-width)"
-        srcset="../source/img/photos/map-tablet.png 1x, ../source/img/photos/map-tablet.png 2x" width="768"
-        height="350">
-      <img class="contacts__map-image" src="../source/img/photos/map-mobile.png"
-        srcset="../source/img/photos/map-mobile.@2x.png 2x" width="320" height="350"
-        alt="Карта с местоположением Седоны">
-    </picture>
-
-
-    <img class="contacts__map-pin" src="../source/img/icons/map-pin.svg" width="27" height="27"
-      alt="Расположение Седоны">
-
-    <iframe class="contacts__map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.39000799115!2d-111.87753959259337!3d34.85435061183462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1696270739745!5m2!1sru!2sru"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+      </form>
   </main>
   <footer>
     <section class="footer">

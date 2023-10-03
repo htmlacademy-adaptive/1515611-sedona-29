@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
@@ -12,7 +11,7 @@
   <link rel="manifest" href="manifest.json">
 </head>
 
-<body class="page__body page__body--index">
+<body>
   <header class="header">
     <div class="header-logo__container">
       <a href="" class="header-logo__link">
@@ -42,141 +41,79 @@
       </nav>
     </div>
   </header>
-  <main class="main">
-    <h1 class="visually-hidden">Седона-городок в Аризоне.</h1>
-    <section class="hero">
-      <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-      <div class="hero__wrapper">
+  <main>
+    <section class="catalog">
+      <h1 class="catalog__title main-title">Фото и видео</h1>
+      <p class="catalog__text">Не можете решиться на путешествие из-за курса?
+        Фотографии помогут вам забыть о политике и экономике.</p>
+      <div class="catalog__card card">
         <picture>
           <source media="(min-width:1440px)" srcset="../source/img/photos/background-hero-desktop.jpg" width="1200"
             height="518">
-          <source media="(min-width:768px)" srcset="../source/img/photos/background-hero-tablet.jpg" width="768"
-            height="518">
-          <img class="hero__img" src="../source/img/photos/background-hero-mobile.jpg"
-            srcset="../source/img/photos/background-hero-mobile@2x.jpg" alt="Добро пожаловать в Седону" width="320"
-            height="389">
+          <source media="(min-width:768px)" srcset="../source/img/photos/photo-highway.jpg" width="768" height="518">
+          <img class="catalog__img" src="../source/img/photos/photo-highway-mobile.jpg"
+            srcset="../source/img/photos/photo-highway-mobile@2x.jpg" alt="Неродные просторы" width="280" height="280">
         </picture>
+        <p class="card__title main-title">Неродные просторы</p>
+        <p class="card__text">Автор фото: Борис</p>
+        <span class="card__likes-counter">1350</span>
+      </div>
+      <div class="catalog__card card">
+        <picture>
+          <source media="(min-width:1440px)" srcset="../source/img/photos/photo-plants-desktop.jpg" width="1200"
+            height="518">
+          <source media="(min-width:768px)" srcset="../source/img/photos/photo-plants-tablet.jpg" width="768"
+            height="518">
+          <img class="catalog__img" src="../source/img/photos/photo-plants-mobile.jpg"
+            srcset="../source/img/photos/photo-plants-mobile@2x.jpg" alt="Местная растительность" width="280"
+            height="280">
+        </picture>
+        <p class="card__title main-title">Местная растительность</p>
+        <p class="card__text">Автор фото: Сергей</p>
+        <span class="card__likes-counter">143</span>
+      </div>
+      <div class="catalog__card card">
+        <picture>
+          <source media="(min-width:1440px)" srcset="../source/img/photos/photo-nothern-road-desktop.jpg" width="1200"
+            height="518">
+          <source media="(min-width:768px)" srcset="../source/img/photos/photo-nothern-road-tablet.jpg" width="768"
+            height="518">
+          <img class="catalog__img" src="../source/img/photos/photo-nothern-road-mobile.jpg"
+            srcset="../source/img/photos/photo-nothern-road-mobile@2x.jpg" alt="Дорога на север" width="280"
+            height="280">
+        </picture>
+        <p class="card__title main-title">Дорога на север</p>
+        <p class="card__text">Автор фото: Петр</p>
+        <span class="card__likes-counter">96</span>
+      </div>
+      <div class="catalog__card card">
+        <picture>
+          <source media="(min-width:1440px)" srcset="../source/img/photos/photo-bridge-desktop.jpg" width="1200"
+            height="518">
+          <source media="(min-width:768px)" srcset="../source/img/photos/photo-bridge-tablet.jpg" width="768"
+            height="518">
+          <img class="catalog__img" src="../source/img/photos/photo-bridge-mobilejpg.jpg"
+            srcset="../source/img/photos/photo-bridge-mobile@2x.jpg" alt="Мост дьявола" width="280" height="280">
+        </picture>
+        <p class="card__title main-title">Мост дьявола</p>
+        <p class="card__text">Автор фото: Антон</p>
+        <span class="card__likes-counter">254</span>
       </div>
     </section>
-    <section class="advantages">
-      <div class="advantages__wrapper">
-        <h2 class="visually-hidden">Преимущества.</h2>
-        <p class="advantages__title main-title">Седона — небольшой городок в Аризоне,
-          заслуживающий большего!
-        </p>
-        <p class="advantages__subtitle subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-      </div>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <div class="advantages__item-container">
-            <h3 class="advantages__title main-title">Настоящий городок</h3>
-            <p>- № 1 -</p>
-            <p class="advantages__content main-subtitle">Седона — не аттракцион для туристов,там течёт своя жизнь</p>
-          </div>
-          <picture>
-            <source media="(min-width:1440px)" srcset="../source/img/photos/background-hero-desktop.jpg" width="800"
-              height="256">
-            <source media="(min-width:768px)" srcset="../source/img/photos/real-town-tablet.jpg" width="512"
-              height="256">
-            <img class="advantages__img" src="../source/img/photos/real-town-mobile.jpg"
-              srcset="../source/img/photos/real-town-mobile@2x.jpg" alt="Настоящий городок" width="320" height="260">
-          </picture>
-          <section class="services">
-            <h2 class="visually-hidden">Услуги Седоны.</h2>
-            <ul class="services__list">
-              <li class="services__item">
-                <h3 class="services__title main-title">Жильё</h3>
-                <p class="services__text subtitle">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-              </li>
-              <li class="services__item">
-                <h3 class="services__title main-title">Еда</h3>
-                <p class="services-text subtitle">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-                </p>
-              </li>
-              <li class="services__item">
-                <h3 class="services__title main-title">Сувениры</h3>
-                <p class="services-text subtitle">Не только китайского, но и настоящего местного производства!</p>
-              </li>
-            </ul>
-          </section>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__item-container">
-            <h3 class="advantages__title main-title">Там есть мост дьявола</h3>
-            <p>- № 2 -</p>
-            <p class="advantages__content main-subtitle">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          </div>
-          <picture>
-            <source media="(min-width:1440px)" srcset="../source/img/photos/devil's-bridge-desktop.jpg" width="800"
-              height="256">
-            <source media="(min-width:768px)" srcset="../source/img/photos/devil's-bridge-tablet.jpg" width="512"
-              height="256">
-            <img class="advantages__img" src="../source/img/photos/devil's-bridge-mobile.jpg"
-              srcset="../source/img/photos/devil's-bridge-mobile@2x.jpg" alt="Мост дьявола" width="320" height="260">
-          </picture>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__item-container">
-            <h3 class="advantages__title main-title">Небольшая площадь</h3>
-            <p>- № 3 -</p>
-            <p class="advantages__content main-subtitle">Все интересные места находятся очень близко</p>
-          </div>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__item-container">
-            <h3 class="advantages__title main-title">Красивая дорога</h3>
-            <p>- № 4 -</p>
-            <p class="advantages__content main-subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__item-container">
-            <h3 class="advantages__title main-title">Мало туристов</h3>
-            <p>- № 5 -</p>
-            <p class="advantages__content main-subtitle">Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
-        </li>
-      </ul>
+    <section class="video-presentation">
+      <h2 class="video-presentation__title main-title">Всё еще сомневаетесь?</h2>
+      <p class="video-presentation__text">Смотрите видеопрезентацию и скорее за билетами,
+        пока они не подорожали в очередной раз!</p>
+      <picture>
+        <source media="(min-width:1440px)" srcset="../source/img/photos/video-desktop.jpg" width="1200" height="518">
+        <source media="(min-width:768px)" srcset="../source/img/photos/video-tablet.jpg" width="768" height="518">
+        <img class="video-presentation__img" src="../source/img/photos/video-mobile.jpg"
+          srcset="../source/img/photos/video-mobile@2x.jpg" alt="Видео-презентация" width="280" height="280">
+      </picture>
+      <button class="video-presentation__button" type="button">
+        <span class="visually-hidden">Кнопка включения видео.</span>
+      </button>
     </section>
-    <section class="purchase">
-      <div class="purchase__container">
-        <h2 class="visually-hidden">Покупка тура.</h2>
-        <p class="purchase__title main-title">Заинтересовались?</p>
-        <p class="purchase__subtitle main-subtitle">Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="purchase__button button">Найти гостиницу</a>
-      </div>
-    </section>
-    <picture>
-      <source media="(min-width: @desktop-width)"
-        srcset="../source/img/photos/map-desktop.webp, ../source/img/map-desktop@2x.webp 2x" type="image/webp"
-        width="1440" height="350">
-      <source media="(min-width: @tablet-width)"
-        srcset="../source/img/photos/map-tablet.webp, ../source/img/map-tablet@2x.webp 2x" type="image/webp" width="768"
-        height="350">
-      <source media="(min-width: @mobile-width)"
-        srcset="../source/img/photos/map-mobile.webp, ../source/img/map-mobile@2x.webp 2x" type="image/webp" width="320"
-        height="350">
-      <source media="(min-width: @desktop-width)"
-        srcset="../source/img/photos/map-desktop.png 1x, ../source/img/photos/map-desktop.png 2x" width="1440"
-        height="350">
-      <source media="(min-width: @tablet-width)"
-        srcset="../source/img/photos/map-tablet.png 1x, ../source/img/photos/map-tablet.png 2x" width="768"
-        height="350">
-      <img class="contacts__map-image" src="../source/img/photos/map-mobile.png"
-        srcset="../source/img/photos/map-mobile.@2x.png 2x" width="320" height="350"
-        alt="Карта с местоположением Седоны">
-    </picture>
-
-
-    <img class="contacts__map-pin" src="../source/img/icons/map-pin.svg" width="27" height="27"
-      alt="Расположение Седоны">
-
-    <iframe class="contacts__map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.39000799115!2d-111.87753959259337!3d34.85435061183462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1696270739745!5m2!1sru!2sru"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
   </main>
   <footer>
     <section class="footer">
@@ -242,6 +179,8 @@
     </section>
 
   </footer>
+
+
 </body>
 
 </html>

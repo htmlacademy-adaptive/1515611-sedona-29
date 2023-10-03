@@ -2,17 +2,17 @@
   "name": "sedona-29",
   "private": true,
   "description": "Личный проект «Седона» от HTML Academy",
-  "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
-    "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "^0.1.11"
-  },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
     "lint": "npm run editorconfig",
     "build": "echo 'Build task'",
     "start": "echo 'Start task'"
+  },
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "stylelint": "13.13.1",
+    "stylelint-config-htmlacademy": "^0.1.11"
   },
   "editorconfig-cli": [
     "*.json",
