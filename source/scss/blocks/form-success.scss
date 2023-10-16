@@ -1,0 +1,10 @@
+.form-success {
+  width: 320px;
+  height: 323px;
+  background-color: #008000;
+  display: none;
+
+  &.show-form {
+    display: block;
+  }
+}

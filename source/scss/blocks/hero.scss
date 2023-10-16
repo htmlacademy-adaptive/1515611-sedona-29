@@ -1,0 +1,78 @@
+.hero__img {
+  background-color: $basic-blue;
+  width: 100%;
+}
+
+.hero__wrapper {
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("/img/icons/welcome-index.svg") no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url("/img/icons/welcome-index-tablet.svg") no-repeat center center;
+      position: absolute;
+      top: -10px;
+      left: 0;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("/img/icons/top-white-decor.svg") no-repeat center center;
+    position: absolute;
+    top: 163px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 227px;
+    }
+  }
+}
+
+.hero-form__wrapper {
+  position: relative;
+  width: 100%;
+
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("/img/icons/welcome-form-mobile.svg") no-repeat center center;
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("/img/icons/top-white-decor.svg") no-repeat center center;
+    position: absolute;
+    top: 47px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      top: 227px;
+    }
+  }
+}

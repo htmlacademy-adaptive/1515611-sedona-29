@@ -1,0 +1,23 @@
+
+.form {
+  padding: 0;
+  margin: 0 auto 10px auto;
+  background-color: $basic-white;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.form__text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding: 6px 0 0 142px;
+  margin: 0;
+}
+
+.form__wrapper {
+  margin: 0 auto;
+}

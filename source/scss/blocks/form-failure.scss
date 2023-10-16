@@ -1,0 +1,10 @@
+.form-failure {
+  width: 320px;
+  height: 280px;
+  background-color: #ff6347;
+  display: none;
+
+  &.show-form {
+    display: block;
+  }
+}

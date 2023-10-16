@@ -1,0 +1,27 @@
+.header {
+  background-color: $basic-white;
+  min-height: 56px;
+}
+
+.header__nav {
+  @include list-item-style;
+  position: relative;
+}
+
+.header-logo__link {
+  cursor: pointer;
+}
+
+.header-logo__img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 93px);
+  z-index: 3;
+}
+
+@media (min-width: $tablet-width) {
+  .header-logo__img {
+    z-index: 10;
+  }
+}
+
