@@ -8,11 +8,27 @@
   position: absolute;
   bottom: 297px;
   left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .feedback__title {
   position: relative;
   margin: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+    margin: 56px 0 24px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 26px;
+    margin: 109px 0 31px 0;
+  }
 }
 
 .feedback {
@@ -21,6 +37,10 @@
   margin: 0 auto;
   background-color: $basic-white;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    max-width: 648px;
+  }
 }
 
 .feedback__subtitle {
@@ -30,4 +50,12 @@
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 103px 106px 103px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 103px 68px 103px;
+  }
 }

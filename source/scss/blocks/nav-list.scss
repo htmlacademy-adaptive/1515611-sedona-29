@@ -18,18 +18,13 @@
     padding: 0;
     margin: 20px 0 0 50px;
     display: grid;
-    grid-template-columns: repeat(5, 105px);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 42px;
-  }
-
-  @media (min-width: 800px) {
-    grid-gap: calc(12% - 10px);
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin: 20px 72px 0 90px;
-    grid-gap: calc(20% - 78px);
+    margin: 20px 0 0 90px;
   }
 }
 

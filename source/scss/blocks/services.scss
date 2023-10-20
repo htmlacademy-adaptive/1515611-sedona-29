@@ -54,7 +54,7 @@
       background: url("../../img/sprite.svg#house-tablet-desktop") no-repeat center center;
       position: absolute;
       top: -94px;
-      left: 88px;
+      left: 160px;
     }
   }
 }
@@ -79,7 +79,8 @@
       background: url("../../img/sprite.svg#hamburger-tablet-desktop") no-repeat center center;
       position: absolute;
       top: -94px;
-      left: 88px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -110,7 +111,8 @@
       background: url("../../img/sprite.svg#present-tablet-desktop") no-repeat center center;
       position: absolute;
       top: -90px;
-      left: 92px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

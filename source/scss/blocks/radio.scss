@@ -28,3 +28,9 @@
   top: 0;
   left: -45px;
 }
+
+.radio {
+  @media (min-width: $desktop-width) {
+    min-width: 185px;
+  }
+}
