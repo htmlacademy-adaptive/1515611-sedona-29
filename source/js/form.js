@@ -1,3 +1,5 @@
+//навешиваем на форму id и получаем поля форм
+
 const formBtn = document.getElementById("form-submit-button");
 
 const firstNameInput = document.getElementById("form-first-name-input");
@@ -17,6 +19,12 @@ const impressionHesitantCheckbox = document.getElementById(
 
 const formFailure = document.getElementById("form-failure");
 const formSuccess = document.getElementById("form-success");
+
+// 1) получаем значения и состояния из полей форм;
+// 2) проверяем, все ли инпуты заполнены и записываем в константу
+// 3) проверяем, чтобы были выбраны неск вариантов галочкой, где в форме предоставлен выбор
+// 4) если не все инпуты заполнены или не чекнуты некоторые поля, показываем форму failure, при этом убирая показ формы success.
+// 5) при обратном условии-всё наоборот
 
 formBtn.addEventListener("click", () => {
   const first = firstNameInput.value;

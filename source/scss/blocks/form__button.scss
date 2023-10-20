@@ -6,4 +6,9 @@
   font-weight: 700;
   line-height: 26px;
   margin-top: 10px;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
+  }
 }

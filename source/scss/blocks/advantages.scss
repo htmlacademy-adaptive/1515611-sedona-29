@@ -1,5 +1,10 @@
 .main-title {
   @include main-title;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .main-text {
@@ -23,7 +28,7 @@
     background-color: #eeeeee;
     flex-wrap: wrap;
     min-height: 256px;
-    column-gap: calc(10% - 80px);
+    // column-gap: calc(10% - 80px);
   }
 
   .advantages__list-nopic {
@@ -91,7 +96,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding: 0 29px 15px 29px;
+  padding: 0 29px 40px 29px;
 }
 
 .advantages__item-container .photo-bridge {
@@ -127,11 +132,6 @@
 
   &--grey {
     background-color: #eeeeee;
-
-    @media (min-width: $tablet-width) {
-      width: 256px;
-      height: 256px;
-    }
   }
 
   &--blue {
@@ -140,6 +140,10 @@
     @media (min-width: $tablet-width) {
       width: 256px;
       min-height: 256px;
+    }
+
+    @media (min-width: 769px) {
+      flex-basis: max-content;
     }
   }
 }
@@ -246,5 +250,11 @@
   .real-town-wrapper,
   .bridge-wrapper {
     min-height: 256px;
+  }
+}
+
+.item-grey {
+  @media (min-width: $tablet-width) {
+    width: 33.3%;
   }
 }
