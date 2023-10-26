@@ -19,7 +19,7 @@
     margin: 20px 0 0 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 42px;
+    grid-gap: 0;
   }
 
   @media (min-width: $desktop-width) {

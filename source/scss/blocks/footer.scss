@@ -53,3 +53,19 @@
   gap: 10px;
   justify-content: center;
 }
+
+.footer-catalog {
+  padding: 12px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 648px;
+    margin: 0 auto;
+    padding: 53px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 53px 120px 0 120px;
+  }
+}
