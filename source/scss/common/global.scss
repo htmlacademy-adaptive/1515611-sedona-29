@@ -24,6 +24,16 @@
   line-height: 26px;
 }
 
+
+.main-title-card {
+  font-family: "PTSans", "Arial", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $basic-black;
+  font-size: 14px;
+  line-height: 21px;
+}
+
 @mixin main-title-tablet {
   font-family: "PTSans", "Arial", sans-serif;
   font-weight: bold;
