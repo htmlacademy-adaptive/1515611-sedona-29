@@ -3,10 +3,6 @@
 
   @include main-title;
 
-  @media (max-width: 767px) {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 21px;

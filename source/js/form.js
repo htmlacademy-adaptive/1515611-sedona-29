@@ -20,6 +20,9 @@ const impressionHesitantCheckbox = document.getElementById(
 const formFailure = document.getElementById("form-failure");
 const formSuccess = document.getElementById("form-success");
 
+const formFailureBtn = document.getElementById("form-failure-btn");
+const formSuccessBtn = document.getElementById("form-success-btn");
+
 // 1) получаем значения и состояния из полей форм;
 // 2) проверяем, все ли инпуты заполнены и записываем в константу
 // 3) проверяем, чтобы были выбраны неск вариантов галочкой, где в форме предоставлен выбор
@@ -42,10 +45,16 @@ formBtn.addEventListener("click", () => {
   const someChecked = plus || minus || hesitant;
 
   if (!allInputsFilled || !someChecked) {
-    formFailure.classList.add("show-form");
-    formSuccess.classList.remove("show-form");
+    formFailure.classList.remove("hide-form");
+    formSuccess.classList.add("hide-form");
+    formFailureBtn.addEventListener("click", () => {
+      formFailure.classList.add("hide-form");
+    });
   } else {
-    formFailure.classList.remove("show-form");
-    formSuccess.classList.add("show-form");
+    formFailure.classList.add("hide-form");
+    formSuccess.classList.remove("hide-form");
+    formSuccessBtn.addEventListener("click", () => {
+      formSuccess.classList.add("hide-form");
+    });
   }
 });

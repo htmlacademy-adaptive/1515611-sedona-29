@@ -20,6 +20,7 @@
   padding: 0 92px;
   margin-bottom: 30px;
   display: block;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     padding: 16px 0;
@@ -52,6 +53,30 @@
   display: flex;
   gap: 10px;
   justify-content: center;
+  cursor: pointer;
+
+
+  &:hover,
+  &:focus {
+    color: #669ec0;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+}
+
+.footer-icon__link {
+  &:hover,
+  &:focus {
+    opacity: 1;
+    fill: #669ec0;
+  }
+
+  &:active {
+    opacity: 1;
+    fill: #b3b3b3;
+  }
 }
 
 .footer-catalog {
