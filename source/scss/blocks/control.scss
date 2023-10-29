@@ -57,3 +57,7 @@
     left: 14px;
   }
 }
+
+.control__input:hover + .control__label::before {
+  background-color: #e5e5e5;
+}
