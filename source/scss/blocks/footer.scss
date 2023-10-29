@@ -54,16 +54,6 @@
   gap: 10px;
   justify-content: center;
   cursor: pointer;
-
-
-  &:hover,
-  &:focus {
-    color: #669ec0;
-  }
-
-  &:active {
-    color: #b3b3b3;
-  }
 }
 
 .footer-icon__link {
@@ -92,5 +82,34 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 53px 120px 0 120px;
+  }
+}
+
+.htmlacademy-logo {
+  color: #000000;
+}
+
+.footer-bottom__wrapper:hover {
+  .footer-text__text,
+  .htmlacademy-logo {
+    color: #669ec0;
+    fill: #669ec0;
+  }
+}
+
+.footer-bottom__wrapper:active {
+  .footer-text__text,
+  .htmlacademy-logo {
+    color: #b3b3b3;
+    fill: #b3b3b3;
+  }
+}
+
+
+.footer-bottom__wrapper:focus {
+  .footer-text__text,
+  .htmlacademy-logo {
+    color: #336f95;
+    fill: #336f95;
   }
 }
