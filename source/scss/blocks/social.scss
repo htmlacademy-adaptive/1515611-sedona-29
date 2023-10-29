@@ -42,7 +42,12 @@
     content: "";
     width: 24px;
     height: 24px;
-    background-image: url("./img/icons/sprite.svg#youtube");
+    mask-image: url("./img/icons/sprite.svg#youtube");
+    mask-repeat: no-repeat;
+
+    &:active {
+      background-color: #669ec0;
+    }
   }
 
   &:hover {

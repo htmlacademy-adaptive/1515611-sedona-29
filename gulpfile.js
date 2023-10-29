@@ -93,15 +93,6 @@ const svg = () => {
     .pipe(gulp.dest("build/img"));
 };
 
-// const sprite = () => {
-//   return gulp
-//     .src("source/img/icons/*.svg")
-//     .pipe(svgmin())
-//     .pipe(svgstore({ inlineSvg: true }))
-//     .pipe(rename("sprite.svg"))
-//     .pipe(gulp.dest("build/img"));
-// };
-
 //шрифты, манифест теперь синхронный
 export const copy = (done) => {
   gulp
@@ -111,12 +102,6 @@ export const copy = (done) => {
     .pipe(gulp.dest("build"));
   done();
 };
-
-// const copy = () => {
-//   return gulp
-//     .src(["source/fonts/*.{woff,woff2}", "source/*.ico"], { base: "source" })
-//     .pipe(gulp.dest("build"));
-// };
 
 // Watcher
 
