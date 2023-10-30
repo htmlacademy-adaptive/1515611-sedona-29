@@ -29,8 +29,16 @@
   left: -45px;
 }
 
+.radio__input[type="radio"]:focus + .radio__label::after {
+  background-color: #333333;
+}
+
 .radio {
   @media (min-width: $desktop-width) {
     min-width: 185px;
   }
+}
+
+.radio__input:hover + .radio__label::before {
+  background-color: #e5e5e5;
 }
